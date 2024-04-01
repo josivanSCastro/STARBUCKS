@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@300;500&display=swap"
+        rel="stylesheet">
+
+
+    <!-- outro estilo de fonte  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css"> <!--para poder estilizar o html no css -->
+
+    <title>Starbucks</title>
+
+</head>
+
+
+<body>
+
+
+    <img src="imagens do projeto/logo.png" alt="logo" class="logo">
+    <div class="circulo"></div>
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>Não é apenas um Cafe, <br> é um <span>Starbucks!</span></h2>
+
+            <p>Chegou Starbucks® na Sua Casa, Acesse e Encontre o Café que Mais Combina com Você! O café Starbucks® que
+                você
+                tanto adora, agora no conforto da sua casa.</p>
+
+            <button class="botao">Acesse aqui e Garanta o seu!</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./imagens do projeto/img1.png" alt="copo Starbucks" class="copo-Starbucks">
+        </div>
+    </div>
+    <div class="menu">
+        <img src="./imagens do projeto/img-pequena1.png" alt="menu" class="copo-pequeno verde">
+        <img src="./imagens do projeto/img-pequena2.png" alt="menu" class="copo-pequeno salmao">
+        <img src="./imagens do projeto/img-pequena3.png" alt="menu" class="copo-pequeno rosa">
+    </div>
+</body>
+
+<script> <!--comandos do javascript na pagina-->
+
+    let botao = document.querySelector(".botao")
+    let circulo = document.querySelector(".circulo")
+    let imgCopo = document.querySelector(".copo-Starbucks")
+    let salmao = document.querySelector(".salmao")
+    let verde = document.querySelector(".verde")
+    let rosa = document.querySelector(".rosa")
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "./imagens do projeto/img1.png"
+        circulo.style.background = "#006400"
+    })
+
+    salmao.addEventListener("click", () => {
+        imgCopo.src = "./imagens do projeto/img2.png"
+        circulo.style.background = "#fa8072"
+    })
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "./imagens do projeto/img3.png"
+        circulo.style.background = "#c71585"
+    })
+
+
+</script>
+
+</html>
